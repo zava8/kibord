@@ -60,6 +60,10 @@ to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
 4. setxkbmap us # for us abc ; zi for skovz abc
 
 <img src="nmped.jpg"></img>
+<hr/>
+<img src="laptop_hin.jpg"></img>
+<hr/>
+<img src="zeb_kb_gurum.jpg"></img>
 
 [xkblink1]: https://people.uleth.ca/~daniel.odonnell/blog/custom-keyboard-in-linuxx11
 [nmpedimez]: nmped.jpg
