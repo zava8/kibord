@@ -1,0 +1,14 @@
+<layout>
+   <configItem>
+      <name>zi</name>
+      <shortDescription>india_phonetical_zinglish</shortDescription>
+      <description>india_phonetical_zinglish</description>
+      <languageList>
+         <iso639Id>inc</iso639Id>
+      </languageList>
+      <countryList>
+         <iso3166Id>IN</iso3166Id>
+      </countryList>
+   </configItem>
+   <variantList/>
+</layout>
