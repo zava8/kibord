@@ -59,7 +59,7 @@ to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
 3.  or by deleting the xkm files in /var/lib/xkb and either logging out and back in or just switching to a new layout and back
 4. setxkbmap us # for us abc ; zi for skovz abc
 
-<img src="nmped.jpg"></img>
+<img src="nmped2.jpg"></img>
 <hr/>
 <img src="laptop_hin.jpg"></img>
 <hr/>
