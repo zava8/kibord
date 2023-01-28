@@ -9,7 +9,7 @@ compat  geometry  keycodes  rules  symbols  types
 /usr/share/X11/xkb $ cat symbols/zi
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
-    name[Group1]= "skovz";
+    name[Group1]= "kvizl";
     key  <KP4> {	[  A,	KP_4	]	};
     key  <KP5> {	[  D,	KP_5	]	};
     key  <KP6> {	[  H,	KP_6	]	};
@@ -18,12 +18,10 @@ xkb_symbols "basic" {
 
     key  <KP1> {	[  KP_Home,	KP_1	]	};
     key  <KP3> {	[  KP_End,	KP_3	]	};
-
     key  <KP2> {	[  KP_Next,	KP_2	]	};
     key  <KP8> {	[  KP_Prior,	KP_8	]	};
-
     key  <KP0> {	[  underscore,	KP_0	]	};
-
+    key <KPDL> {  [  numbersign, KP_Decimal ]   };
 };
 
 
@@ -31,7 +29,7 @@ xkb_symbols "basic" {
 # in this section add entry :
 ! layout
 us              English (US)
-zi              skovz
+zi              kvizl
 ```
 some important xkb points:[custom keyboard xkb guide][xkblink1]
 to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
@@ -57,13 +55,19 @@ to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
 ```
 3. invoking niyu evdev, either by **sudo dpkg-reconfigure xkb-data**
 3.  or by deleting the xkm files in /var/lib/xkb and either logging out and back in or just switching to a new layout and back
-4. setxkbmap us # for us abc ; zi for skovz abc
+4. setxkbmap us # for us abc ; zi for kvizl abc
 
-<img src="nmped2.jpg"></img>
-<hr/>
-<img src="laptop_hin.jpg"></img>
-<hr/>
-<img src="zeb_kb_gurum.jpg"></img>
+<img src="i/pnzabi_nmped2.jpg"></img> <hr/>
+<img src="i/bangla_nmped2.jpg"></img> <hr/>
+<img src="i/kannada_nmped2.jpg"></img> <hr/>
+<img src="i/telugu_nmped2.jpg"></img> <hr/>
+<img src="i/tmil_nmped2.jpg"></img> <hr/>
+<img src="i/mlyalm_nmped2.jpg"></img> <hr/>
+<img src="i/odia_nmped2.jpg"></img> <hr/>
+<img src="i/guz_nmped2.jpg"></img> <hr/>
+<img src="i/hindi_nmped2.jpg"></img> <hr/>
+<img src="i/laptop_hin.jpg"></img> <hr/>
+<img src="i/zeb_kb_gurum.jpg"></img> <hr/>
 
 [xkblink1]: https://people.uleth.ca/~daniel.odonnell/blog/custom-keyboard-in-linuxx11
 [nmpedimez]: nmped.jpg
