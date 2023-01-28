@@ -75,17 +75,5 @@ to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
 <img src="i/guz_nmped2.jpg"></img> <hr/>
 <img src="i/laptop_hin.jpg"></img> <hr/>
 <img src="i/zeb_kb_gurum.jpg"></img> <hr/>
-bangla_nmped2.jpg    kibord_hindi58.jpg    kibord_telugu58.jpg  pnzabi_nmped2.jpg
-guz_nmped2.jpg       kibord_kannada54.jpg  kibord_tmil54.jpg    telugu_nmped2.jpg
-hindi_nmped2.jpg     kibord_kannada58.jpg  kibord_tmil58.jpg    tmil_nmped2.jpg
-hp_kb.jpg            kibord_mlyalm54.jpg   kiiz_sym_hindi.jpg   zeb_kb1.jpg
-kannada_nmped2.jpg   kibord_mlyalm58.jpg   laptop_hin.jpg       zeb_kb_960_384_vk_bg.jpg
-kibord_bangla54.jpg  kibord_odia54.jpg     mlyalm_nmped2.jpg    zeb_kb_gurum.jpg
-kibord_bangla58.jpg  kibord_odia58.jpg     nmped2.jpg           zeb_kb.jpg
-kibord_guz54.jpg     kibord_pnzabi54.jpg   nmped3.jpg
-kibord_guz58.jpg     kibord_pnzabi58.jpg   nmped.jpg
-kibord_hindi54.jpg   kibord_telugu54.jpg   odia_nmped2.jpg
-
-
 [xkblink1]: https://people.uleth.ca/~daniel.odonnell/blog/custom-keyboard-in-linuxx11
 [nmpedimez]: nmped.jpg
