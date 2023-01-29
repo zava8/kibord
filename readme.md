@@ -58,7 +58,7 @@ to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
 4. setxkbmap us # for us abc ; zi for kvizl abc
 
 <img src="i/nmped3.jpg"></img> <hr/>
-<img src="i/hindi_nmped2.jpg"></img> <hr/>
+<img src="i/hin_nmped2.jpg"></img> <hr/>
 <img src="i/laptop_hin54.jpg"></img> <hr/>
 <img src="i/laptop_hin58.jpg"></img> <hr/>
 <img src="i/kibord_hindi54.jpg"></img> <hr/>
