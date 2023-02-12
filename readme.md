@@ -10,6 +10,7 @@ compat  geometry  keycodes  rules  symbols  types
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
     name[Group1]= "kvizl";
+    key  <RALT> {	[  Menu	]	};
     key  <KP4> {	[  A,	KP_4	]	};
     key  <KP5> {	[  D,	KP_5	]	};
     key  <KP6> {	[  H,	KP_6	]	};

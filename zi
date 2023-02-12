@@ -3,6 +3,7 @@ xkb_symbols "basic" {
 
     name[Group1]= "kvizl";
 
+    key  <RALT> {	[  Menu	]	};
     key  <KP4> {	[  A,	KP_4	]	};
     key  <KP5> {	[  D,	KP_5	]	};
     key  <KP6> {	[  H,	KP_6	]	};
