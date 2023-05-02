@@ -1,0 +1,53 @@
+org.cinnamon.desktop.screensaver font-time 'Ubuntu 64'
+org.cinnamon.desktop.screensaver font-date 'Ubuntu 24'
+org.cinnamon.desktop.screensaver font-message 'Ubuntu 14'
+guake.general use-default-font true
+guake.style.font allow-bold true
+guake.style.font palette-name 'Tango'
+guake.style.font bold-is-bright false
+guake.style.font style 'hin58d'
+org.freedesktop.ibus.panel custom-font 'Sans 10'
+org.freedesktop.ibus.panel use-custom-font false
+org.cinnamon.desktop.interface font-name 'hin58d 16'
+x.dm.slick-greeter font-name 'Ubuntu 11'
+org.x.sticky font 'Arial 14'
+org.gnome.yelp font-adjustment 0
+org.gnome.Charmap font @ms nothing
+org.cinnamon.desktop.wm.preferences titlebar-font 'hin58d 16'
+org.cinnamon.desktop.wm.preferences titlebar-uses-system-font false
+org.gnome.libgnomekbd.indicator font-family ''
+org.gnome.libgnomekbd.indicator font-size 10
+org.gnome.meld custom-font 'monospace, 14'
+org.gnome.meld use-system-font true
+com.canonical.unity-greeter font-name 'Ubuntu 11'
+org.mate.interface monospace-font-name 'Monospace 10'
+org.mate.interface use-custom-font false
+org.mate.interface document-font-name 'Sans 10'
+org.mate.interface font-name 'Ubuntu 10'
+org.x.editor.preferences.print print-font-body-pango 'Monospace 9'
+org.x.editor.preferences.print print-font-numbers-pango 'Sans 8'
+org.x.editor.preferences.print print-font-header-pango 'Sans 11'
+org.gnome.desktop.wm.preferences titlebar-uses-system-font false
+org.gnome.desktop.wm.preferences titlebar-font 'hin58d 16'
+org.x.editor.state.history-entry history-search-for ['font']
+com.linuxmint.mintmenu.plugins.recent recent-font-size 9
+org.x.editor.preferences.editor use-default-font false
+org.x.editor.preferences.editor editor-font 'hin58d 16'
+org.gnome.desktop.interface monospace-font-name 'hin58md 12'
+org.gnome.desktop.interface document-font-name 'hin58d 16'
+org.gnome.desktop.interface font-name 'hin58d 16'
+org.gnome.FontManager compare-font-size 12.0
+org.gnome.FontManager browse-font-size 12.0
+org.gnome.FontManager selected-font '0'
+org.gnome.FontManager preview-font-size 10.0
+org.gnome.FontManager charmap-font-size 16.0
+org.gnome.FontViewer charmap-font-size 16.0
+org.gnome.FontViewer preview-font-size 10.0
+org.x.pix.image-print header-font-name 'sans bold 12'
+org.x.pix.image-print font-name 'sans normal 12'
+org.x.pix.image-print footer-font-name 'sans normal 8'
+com.github.maoschanz.drawing.tools-options last-font-name 'Sans'
+org.mate.caja.desktop font 'Ubuntu 10'
+org.nemo.desktop font 'hin58d 16'
+org.gnome.gnome-system-log fontsize 10
+org.freedesktop.ibus.panel.emoji font 'Monospace 16'

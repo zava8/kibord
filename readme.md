@@ -9,7 +9,7 @@ compat  geometry  keycodes  rules  symbols  types
 /usr/share/X11/xkb $ cat symbols/zi
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
-    name[Group1]= "kvizl";
+    name[Group1]= "zy_india";
     key  <RALT> {	[  Menu	]	};
     key  <KP4> {	[  A,	KP_4	]	};
     key  <KP5> {	[  D,	KP_5	]	};
@@ -30,7 +30,7 @@ xkb_symbols "basic" {
 # in this section add entry :
 ! layout
 us              English (US)
-zi              kvizl
+zi              zy_india
 ```
 some important xkb points:[custom keyboard xkb guide][xkblink1]
 to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
@@ -56,7 +56,7 @@ to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
 ```
 3. invoking niyu evdev, either by **sudo dpkg-reconfigure xkb-data**
 3.  or by deleting the xkm files in /var/lib/xkb and either logging out and back in or just switching to a new layout and back
-4. setxkbmap us # for us abc ; zi for kvizl abc
+4. setxkbmap us # for us abc ; zi for zy_india abc
 
 <img src="i/nmped3.jpg"></img> <hr/>
 <img src="i/hin_nmped2.jpg"></img> <hr/>
