@@ -57,8 +57,8 @@ hi              hin115
 some important xkb points:[custom keyboard xkb guide][xkblink1]
 to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
 
-1. go to end of "<layoutList> section (search for </layoutList>").
-2. Add the folloving after the last "</layout>" tag
+1. go to end of &lt;layoutList&gt; section (search for &lt;/layoutList&gt;").
+2. Add the folloving after the last "&lt;/layout&gt;" tag
 
 ```
     <layout>
