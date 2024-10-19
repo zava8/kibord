@@ -12,11 +12,11 @@ default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
     name[Group1]= "ing115";
     key  <RALT> {	[  Menu	]	};
-    key  <KP4> {        [  ᴀ,   KP_4    ]       };
-    key  <KP5> {        [  ꟈ,   KP_5    ]       };
-    key  <KP6> {        [  ɦ,   KP_6    ]       };
-    key  <KP7> {        [  ᴛ,   KP_7    ]       };
-    key  <KP9> {        [  N,   KP_9    ]       };
+    key  <KP4> {	[  U1D00,	KP_4	]	};
+    key  <KP5> {	[  UA7C8,	KP_5	]	};
+    key  <KP6> {	[  U0266,	KP_6	]	};
+    key  <KP7> {	[  U1D1B,	KP_7	]	};
+    key  <KP9> {	[  U1E45,	KP_9	]	};
 
     key  <KP1> {	[  KP_Home,	KP_1	]	};
     key  <KP3> {	[  KP_End,	KP_3	]	};
