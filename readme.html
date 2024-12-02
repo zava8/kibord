@@ -1,0 +1,75 @@
+<h1 id="kibord">kibord</h1>
+<h2 id="linuks-keyboard-layout-mapping-help-vindoz-help-in-nekst-section-">linuks keyboard layout mapping help (vindoz help in nekst section)</h2>
+<pre><code><span class="hljs-meta-keyword">/usr/</span>share/X11/xkb $ ls
+compat  geometry  keycodes  rules  symbols  types
+<span class="hljs-meta-keyword">/usr/</span>share/X11/xkb $ ls -l symbols/zi
+-rw-rw-r-- <span class="hljs-number">1</span> viml viml <span class="hljs-number">32327</span> Jul  <span class="hljs-number">7</span>  <span class="hljs-number">2021</span> symbols/zi
+<span class="hljs-meta-keyword">/usr/</span>share/X11/xkb $ cat symbols/zi
+default  partial alphanumeric_keys modifier_keys
+xkb_symbols <span class="hljs-string">"basic"</span> {
+    name[Group1]= <span class="hljs-string">"zy_india"</span>;
+    key  <span class="hljs-params">&lt;RALT&gt;</span> {    [  Menu    ]    };
+    key  <span class="hljs-params">&lt;KP4&gt;</span> {    [  A,    KP_4    ]    };
+    key  <span class="hljs-params">&lt;KP5&gt;</span> {    [  D,    KP_5    ]    };
+    key  <span class="hljs-params">&lt;KP6&gt;</span> {    [  H,    KP_6    ]    };
+    key  <span class="hljs-params">&lt;KP7&gt;</span> {    [  T,    KP_7    ]    };
+    key  <span class="hljs-params">&lt;KP9&gt;</span> {    [  N,    KP_9    ]    };
+
+    key  <span class="hljs-params">&lt;KP1&gt;</span> {    [  KP_Home,    KP_1    ]    };
+    key  <span class="hljs-params">&lt;KP3&gt;</span> {    [  KP_End,    KP_3    ]    };
+    key  <span class="hljs-params">&lt;KP2&gt;</span> {    [  KP_Next,    KP_2    ]    };
+    key  <span class="hljs-params">&lt;KP8&gt;</span> {    [  KP_Prior,    KP_8    ]    };
+    key  <span class="hljs-params">&lt;KP0&gt;</span> {    [  underscore,    KP_0    ]    };
+    key <span class="hljs-params">&lt;KPDL&gt;</span> {  [  numbersign, KP_Decimal ]   };
+};
+
+
+<span class="hljs-meta-keyword">/usr/</span>share/X11/xkb $ vi rules/base.lst  <span class="hljs-meta"># search for ! layout</span>
+<span class="hljs-meta"># in this section add entry :</span>
+! layout
+us              English (US)
+zi              zy_india
+</code></pre><p>some important xkb points:<a href="https://people.uleth.ca/~daniel.odonnell/blog/custom-keyboard-in-linuxx11">custom keyboard xkb guide</a>
+to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml</p>
+<ol>
+<li>go to end of <layoutList> section (search for </layoutList>).</li>
+<li>Add the folloving after the last </layout> tag</li>
+</ol>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">layout</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">configItem</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">name</span>&gt;</span>zi<span class="hljs-tag">&lt;/<span class="hljs-name">name</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">shortDescription</span>&gt;</span>india_phonetical_zinglish<span class="hljs-tag">&lt;/<span class="hljs-name">shortDescription</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">description</span>&gt;</span>india_phonetical_zinglish<span class="hljs-tag">&lt;/<span class="hljs-name">description</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">languageList</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">iso639Id</span>&gt;</span>inc<span class="hljs-tag">&lt;/<span class="hljs-name">iso639Id</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">languageList</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">countryList</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">iso3166Id</span>&gt;</span>IN<span class="hljs-tag">&lt;/<span class="hljs-name">iso3166Id</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">countryList</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">configItem</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">variantList</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">layout</span>&gt;</span>
+</code></pre><ol>
+<li>invoking niyu evdev, either by <strong>sudo dpkg-reconfigure xkb-data</strong></li>
+<li>or by deleting the xkm files in /var/lib/xkb and either logging out and back in or just switching to a new layout and back</li>
+<li>setxkbmap us # for us abc ; zi for zy_india abc</li>
+</ol>
+<p><img src="i/nmped3.jpg"></img> <hr/>
+<img src="i/hin_nmped2.jpg"></img> <hr/>
+<img src="i/laptop_hin54.jpg"></img> <hr/>
+<img src="i/laptop_hin58.jpg"></img> <hr/>
+<img src="i/kibord_hindi54.jpg"></img> <hr/>
+<img src="i/kibord_hindi58.jpg"></img> <hr/>
+<img src="i/pnzabi_nmped2.jpg"></img> <hr/>
+<img src="i/kibord_pnzabi54.jpg"></img> <hr/>
+<img src="i/kibord_pnzabi58.jpg"></img> <hr/>
+<img src="i/bangla_nmped2.jpg"></img> <hr/>
+<img src="i/kannada_nmped2.jpg"></img> <hr/>
+<img src="i/telugu_nmped2.jpg"></img> <hr/>
+<img src="i/tmil_nmped2.jpg"></img> <hr/>
+<img src="i/mlyalm_nmped2.jpg"></img> <hr/>
+<img src="i/odia_nmped2.jpg"></img> <hr/>
+<img src="i/guz_nmped2.jpg"></img> <hr/>
+<img src="i/laptop_hin.jpg"></img> <hr/>
+<img src="i/zeb_kb_gurum.jpg"></img> <hr/></p>
+

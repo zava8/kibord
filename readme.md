@@ -12,18 +12,37 @@ default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
     name[Group1]= "ing115";
     key  <RALT> {	[  Menu	]	};
-    key  <KP4> {	[  U1D00,	KP_4	]	};
-    key  <KP5> {	[  UA7C8,	KP_5	]	};
-    key  <KP6> {	[  U0266,	KP_6	]	};
-    key  <KP7> {	[  U1D1B,	KP_7	]	};
-    key  <KP9> {	[  U1E45,	KP_9	]	};
+// "ԃ"U0502 "à"U00E0 “т”U0442 “н”U043D "ɦ"0266 “ń”U0144 
+    key  <KP4> {	[  U00E0,	KP_4	]	};
+    key  <KP5> {	[  U0502,	KP_5	]	};
+    //key  <KP6> {	[  U0266,	KP_6	]	};
+    key  <KP6> {	[  U043D	KP_6	]	};
+    key  <KP7> {	[  U0442,	KP_7	]	};
+    key  <KP9> {	[  U0144,	KP_9	]	};
 
-    key  <KP1> {	[  KP_Home,	KP_1	]	};
-    key  <KP3> {	[  KP_End,	KP_3	]	};
-    key  <KP2> {	[  KP_Next,	KP_2	]	};
-    key  <KP8> {	[  KP_Prior,	KP_8	]	};
+    //key  <KP4> {	[  A,	KP_4	]	};
+    //key  <KP5> {	[  D,	KP_5	]	};
+    //key  <KP6> {	[  H,	KP_6	]	};
+    //key  <KP7> {	[  T,	KP_7	]	};
+    //key  <KP9> {	[  N,	KP_9	]	};
+
+/// lenovo ideapad 110 15ISK
+    key  <KP1> {	[  KP_Home,         KP_1	]	};
+    key  <KP3> {	[  KP_End,          KP_3	]	};
+    key  <KP2> {	[  KP_Next,         KP_2	]	};
+    key  <KP8> {	[  KP_Prior,        KP_8	]	};
+
+///// dell inspiron
+    //key  <KP1> {	[  h,               KP_1	]	};
+    //key  <KP3> {	[  colon,           KP_3	]	};
+    //key  <KP2> {	[  numbersign,      KP_2	]	}; //question
+    //key  <KP8> {	[  at,              KP_8	]	};
+
+    //key  <KP8> {	[  asciicircum,     KP_8	]	};
+
     key  <KP0> {	[  underscore,	KP_0	]	};
-    key <KPDL> {  [  numbersign, KP_Decimal ]   };
+    key <KPDL> {	[  KP_Delete,	KP_Decimal ]	};
+    //key <KPDL> {    [  numbersign, KP_Decimal ]   };
 };
 =========
 /usr/share/X11/xkb $ cat symbols/hi
