@@ -8,7 +8,7 @@ xkb_symbols "basic" {
     key  <KP4> {	[  U00E0,	KP_4	]	};
     key  <KP5> {	[  U0502,	KP_5	]	};
     //key  <KP6> {	[  U0266,	KP_6	]	};
-    key  <KP6> {	[  U043D	KP_6	]	};
+    key  <KP6> {	[  U043D,	KP_6	]	};
     key  <KP7> {	[  U0442,	KP_7	]	};
     key  <KP9> {	[  U0144,	KP_9	]	};
 

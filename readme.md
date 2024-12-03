@@ -8,6 +8,7 @@ compat  geometry  keycodes  rules  symbols  types
 -rw-rw-r-- 1 viml viml 32327 Jul  7  2021 symbols/zi
 =========
 /usr/share/X11/xkb $ cat symbols/zi
+[github.com/zava8/kibord zi file][zilink1]
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
     name[Group1]= "ing115";
@@ -16,7 +17,7 @@ xkb_symbols "basic" {
     key  <KP4> {	[  U00E0,	KP_4	]	};
     key  <KP5> {	[  U0502,	KP_5	]	};
     //key  <KP6> {	[  U0266,	KP_6	]	};
-    key  <KP6> {	[  U043D	KP_6	]	};
+    key  <KP6> {	[  U043D,	KP_6	]	};
     key  <KP7> {	[  U0442,	KP_7	]	};
     key  <KP9> {	[  U0144,	KP_9	]	};
 
@@ -133,3 +134,4 @@ to add a keyboard layout to /usr/share/X11/xkb/rules/evdev.xml
 <img src="i/zeb_kb_gurum.jpg"></img> <hr/>
 [xkblink1]: https://people.uleth.ca/~daniel.odonnell/blog/custom-keyboard-in-linuxx11
 [nmpedimez]: nmped.jpg
+[zilink1]: https://github.com/zava8/kibord/blob/master/zi
