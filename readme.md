@@ -8,7 +8,7 @@ compat  geometry  keycodes  rules  symbols  types
 -rw-rw-r-- 1 viml viml 32327 Jul  7  2021 symbols/zi
 =========
 /usr/share/X11/xkb $ cat symbols/zi
-(github.com/zava8/kibord zi file)[zilink1]
+<a href="https://github.com/zava8/kibord/blob/master/zi">github.com/zava8/kibord zi file</a>
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
     name[Group1]= "ing115";
