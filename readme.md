@@ -9,25 +9,23 @@ compat  geometry  keycodes  rules  symbols  types
 =========
 /usr/share/X11/xkb $ cat symbols/zi
 ```
+latest zi file is here :
 <a href="https://github.com/zava8/kibord/blob/master/zi">github.com/zava8/kibord zi file</a>
 ```
 default  partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
     name[Group1]= "ing115";
+// * ɦ(small_0266) (U+0144 ń) (U+03B1 α) 
+// * (U+03C4 τ) (U+0442 small_т) (U+0503 ԃ) 
+// * ɧ(small_0267) (U+00A2 ¢) (U+0256 ɖ) (U+0257 ɗ)
+// 4α_U03b1 5ԃ_U0503 6ɦ_U0266 7т_U0442 9ń_U0144
     key  <RALT> {	[  Menu	]	};
-// "ԃ"U0502 "à"U00E0 “т”U0442 “н”U043D "ɦ"0266 “ń”U0144 
-    key  <KP4> {	[  U00E0,	KP_4	]	};
-    key  <KP5> {	[  U0502,	KP_5	]	};
-    //key  <KP6> {	[  U0266,	KP_6	]	};
-    key  <KP6> {	[  U043D,	KP_6	]	};
+    //key  <KP4> {	[  U00E0,	KP_4	]	};
+    key  <KP4> {	[  U03b1,	KP_4	]	};
+    key  <KP5> {	[  U0503,	KP_5	]	};
+    key  <KP6> {	[  U0266,	KP_6	]	};
     key  <KP7> {	[  U0442,	KP_7	]	};
     key  <KP9> {	[  U0144,	KP_9	]	};
-
-    //key  <KP4> {	[  A,	KP_4	]	};
-    //key  <KP5> {	[  D,	KP_5	]	};
-    //key  <KP6> {	[  H,	KP_6	]	};
-    //key  <KP7> {	[  T,	KP_7	]	};
-    //key  <KP9> {	[  N,	KP_9	]	};
 
 /// lenovo ideapad 110 15ISK
     key  <KP1> {	[  KP_Home,         KP_1	]	};
@@ -40,7 +38,6 @@ xkb_symbols "basic" {
     //key  <KP3> {	[  colon,           KP_3	]	};
     //key  <KP2> {	[  numbersign,      KP_2	]	}; //question
     //key  <KP8> {	[  at,              KP_8	]	};
-
     //key  <KP8> {	[  asciicircum,     KP_8	]	};
 
     key  <KP0> {	[  underscore,	KP_0	]	};
